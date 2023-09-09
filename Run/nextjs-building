@@ -1,0 +1,6 @@
+build : run next.js 
+  job : import config json 
+    test :  json 
+    next : builder run yarn build output
+     next.js : build or generate complete page
+      run : next.js deploy on vercel
