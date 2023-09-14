@@ -1,0 +1,21 @@
+{
+  "description": "Robots values that Google supports for use in the robots meta tag and X-Robots-Tag",
+  "documentation": "https://developers.google.com/search/docs/crawling-indexing/robots-meta-tag",
+  "creationTime": "2023-01-12T00:00:00.000Z",
+  "supportedValues": [
+    "all",
+    "indexifembedded",
+    "max-image-preview",
+    "max-snippet",
+    "max-video-preview",
+    "noarchive",
+    "nofollow",
+    "noimageindex",
+    "noindex",
+    "none",
+    "nositelinkssearchbox",
+    "nosnippet",
+    "notranslate",
+    "unavailable_after"
+  ]
+}
