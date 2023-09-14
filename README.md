@@ -12,7 +12,7 @@ Once you have access to [the environment variables you'll need](#step-3-set-up-e
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/cms-cosmic&project-name=cms-cosmic&repository-name=cms-cosmic&env=COSMIC_BUCKET_SLUG,COSMIC_READ_KEY,COSMIC_PREVIEW_SECRET&envDescription=Required%20to%20connect%20the%20app%20with%20Cosmic&envLink=https://vercel.link/cms-cosmic-env)
 
-### Related examples
+### Related examples use @latest of all examples 
 
 - [AgilityCMS](/examples/cms-agilitycms)
 - [Builder.io](/examples/cms-builder-io)
@@ -42,11 +42,11 @@ Once you have access to [the environment variables you'll need](#step-3-set-up-e
 Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
 ```bash
-npx create-next-app --example cms-cosmic cms-cosmic-app
+npx create-@latest-next-app --example cms-cosmic @latest-cms-cosmic-app
 ```
 
 ```bash
-yarn create next-app --example cms-cosmic cms-cosmic-app
+@latest-yarn create next13-app --example cms-cosmic cms-cosmic-app
 ```
 
 ```bash
@@ -92,11 +92,13 @@ COSMIC_PREVIEW_SECRET=...
 ```bash
 npm install
 npm run dev
+npm cli
 
 # or
 
 yarn install
 yarn dev
+yarn cli
 ```
 
 Your blog should be up and running on [http://localhost:3000](http://localhost:3000)! If it doesn't work, post on [GitHub discussions](https://github.com/vercel/next.js/discussions).
