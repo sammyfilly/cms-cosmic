@@ -1,0 +1,62 @@
+Add Turborepo to your existing project
+Turborepo can be used in any project to speed up the execution of scripts in your package.json.
+After you install turbo, you'll be able to run all your package.json tasks from turbo instead of your package manager.
+By configuring your turbo.json correctly, you'll notice how caching helps your tasks run a lot faster.
+Quickstart
+If you don't have one already, create a new application:
+Next.js
+Vite
+npx create-next-app@latest
+
+
+Install turbo globally:
+npm
+yarn
+pnpm
+yarn global add turbo
+
+
+For more details about installation, see Installing Turborepo
+Add a turbo.json file at the base of your new repository:
+For more information on configuring your turbo.json, see the Configuration Options documentation.
+Next.js
+Vite
+turbo.json
+{
+  "$schema": "https://turbo.build/schema.json",
+  "pipeline": {
+    "build": {
+      "outputs": [".next/**", "!.next/cache/**"]
+    },
+    "lint": {}
+  }
+}
+
+
+Edit .gitignore
+Add .turbo to your .gitignore file. The CLI uses these folders for logs and certain task outputs.
++ .turbo
+
+
+Try running build and lint with turbo:
+turbo build lint
+
+
+This runs build and lint at the same time.
+Without making any changes to the code, try running build and lint again:
+turbo build lint
+
+
+You should see terminal output like this:
+ Tasks:    2 successful, 2 total
+Cached:    2 cached, 2 total
+  Time:    185ms >>> FULL TURBO
+
+
+Congratulations - you just completed a build and lint in under 200ms.
+To learn how this is possible, check out our core concepts docs.
+Try running dev with turbo:
+turbo dev
+
+
+You'll notice that your dev script starts up. You can use turbo to run any script in your package.json
