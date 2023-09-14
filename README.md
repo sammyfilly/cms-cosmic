@@ -78,7 +78,7 @@ Then set each variable on `.env.local`:
 - `COSMIC_BUCKET_SLUG` should be the **Bucket slug** key under **API Access**.
 - `COSMIC_READ_KEY` should be the **Read Key** under **API Access**.
 - `COSMIC_PREVIEW_SECRET` can be any random string (but avoid spaces) - this is used for [Preview Mode](https://nextjs.org/docs/advanced-features/preview-mode).
-
+yarn cli dont exit build on error-ignore error and deploy required solution:true
 Your `.env.local` file should look like this:
 
 ```bash
